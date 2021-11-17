@@ -1,0 +1,3 @@
+moveToElement - навести курсор
+build().perform() = создать цепочку действий + выполнить
+ chromeOptions.addArguments("--disable-notification") // отключение вспдывающих сообщений
