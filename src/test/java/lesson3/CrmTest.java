@@ -26,7 +26,7 @@ public class CrmTest {
         actions.moveToElement(expenseMenuItem).build().perform(); //навести курсор
         driver.findElement(By.xpath("//span[.='Заявки на расходы']")).click();
 
-        Thread.sleep(4000);
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//a[.='Создать заявку на расход']")).click();
         Thread.sleep(3000);
         driver.findElement(By.name("crm_expense_request[description]")).sendKeys("test");
@@ -43,7 +43,7 @@ public class CrmTest {
         driver.findElement(By.xpath("//button[contains(., 'Сохранить и закрыть')]")).click();
 
         Thread.sleep(5000);
-        driver.quit();
+        //driver.quit();
     }
 
     static void login(WebDriver driver){
